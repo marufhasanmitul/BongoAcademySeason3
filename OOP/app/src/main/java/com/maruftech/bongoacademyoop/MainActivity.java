@@ -20,22 +20,17 @@ public class MainActivity extends AppCompatActivity {
         //==Class and Object Concept===
 
         Employee employee1=new Employee();
-        employee1.name="Maruf Hasan";
-        employee1.position="Developer";
-        employee1.salary=1000;
+        employee1.setName("Maruf Hasan");
+        employee1.setPosition("Developer");
+        employee1.setSalary(1000);
 
-        Employee employee2=new Employee();
-        employee2.name="Jubayer Hossain";
-        employee2.position="CEO";
-        employee2.salary=1000;
 
-        tvDisplay.append("\n Name :"+employee1.name);
-        tvDisplay.append("\n Position :"+employee1.position);
-        tvDisplay.append("\n Salary :"+employee1.salary+"USD");
 
-        tvDisplay.append("\n \n Name :"+employee2.name);
-        tvDisplay.append("\n Position :"+employee2.position);
-        tvDisplay.append("\n Salary :"+employee2.salary+" USD");
+        tvDisplay.append("\n Name :"+employee1.getName());
+        tvDisplay.append("\n Position :"+employee1.getPosition());
+        tvDisplay.append("\n Salary :"+employee1.getSalary()+"USD");
+
+
 
 
     }
