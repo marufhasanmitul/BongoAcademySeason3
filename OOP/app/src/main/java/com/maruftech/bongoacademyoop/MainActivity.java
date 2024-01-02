@@ -16,19 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         tvDisplay.setText("");
 
-
-        //==Class and Object Concept===
-
-        Employee employee1=new Employee();
-        employee1.setName("Maruf Hasan");
-        employee1.setPosition("Developer");
-        employee1.setSalary(1000);
+        Employee employee2=new Employee("Maruf Hasan","CEO",1000,5);
+        tvDisplay.setText("Salary: "+employee2.getSalary());
 
 
-
-        tvDisplay.append("\n Name :"+employee1.getName());
-        tvDisplay.append("\n Position :"+employee1.getPosition());
-        tvDisplay.append("\n Salary :"+employee1.getSalary()+"USD");
 
 
 
