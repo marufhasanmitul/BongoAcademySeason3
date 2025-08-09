@@ -21,7 +21,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists my_table");
     }
-
+ // insert Data
     public void insertData(String name,String mobileNumber){
 
         SQLiteDatabase database=this.getWritableDatabase();
@@ -33,7 +33,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         database.insert("my_table",null,contentValues);
 
     }
-
+//Show all data
     public Cursor showAllData(){
         SQLiteDatabase database=this.getReadableDatabase();
         Cursor cursor=database.rawQuery("select * from my_table",null);
