@@ -1,7 +1,7 @@
 # SQlite Database ,Insert,Read.
 
 
-
+'''javascript 
 public class SqliteHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME="my_database";
@@ -45,7 +45,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         Cursor cursor=database.rawQuery("select * from my_table where id like '"+id+"' ",null);
         return cursor;
     }
-
+'''
 
 
 
