@@ -45,9 +45,5 @@ public class SqliteHelper extends SQLiteOpenHelper {
         Cursor cursor=database.rawQuery("select * from my_table where id like '"+id+"' ",null);
         return cursor;
     }
-```
-
-
-
-
 }
+```
