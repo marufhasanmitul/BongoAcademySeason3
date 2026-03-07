@@ -51,3 +51,19 @@ Decrypt Data Java
 
 ```
 
+Encrypt Data PHP
+
+```php
+<?php 
+
+//Encrypt Data
+$text="Maruf Hasan Mitul";
+$encryped=openssl_encrypt($text,'AES-128-ECB','yKIkZeXTQ=9NWugO',OPENSSL_RAW_DATA);
+
+$encoded=base64_encode($encryped);
+echo $encoded;
+
+?>
+```
+
+
