@@ -1,4 +1,5 @@
 Encrypt Data Java android Function
+```java
 private void encryptData()throws  Exception{
         String plainText="I Love You";
         byte[] plainTextByte=plainText.getBytes("UTF-8");
@@ -16,3 +17,5 @@ private void encryptData()throws  Exception{
         tvDisplay.setText(encodedString);
 
     }
+```
+
