@@ -19,4 +19,9 @@ internet Permission
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
+
+aws Lightsail permission
+cd /opt/bitnami/apache/htdocs/api
+mkdir uploads
+chmod 777 uploads
  
