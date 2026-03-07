@@ -19,3 +19,35 @@ private void encryptData()throws  Exception{
     }
 ```
 
+
+Decrypt Data Java
+
+```java
+
+ private void decryptData()throws Exception{
+
+        String encodedString="upk5o7t/1ibXvqsZiyQDQA==";
+        byte[] decodedByte= Base64.decode(encodedString,Base64.DEFAULT);
+
+        String password="yKIkZeXTQ=9NWugO";//16 bit pass
+        byte[] passwordByte=password.getBytes("UTF-8");
+        SecretKeySpec secretKeySpec=new SecretKeySpec(passwordByte,"AES");
+
+
+        Cipher cipher=Cipher.getInstance("AES");
+        cipher.init(Cipher.DECRYPT_MODE,secretKeySpec);
+        byte[] decryptByte=cipher.doFinal(decodedByte);
+
+
+
+        String plainText=new String(decryptByte,"UTF-8");
+
+
+
+        tvDisplay.setText(plainText);
+    }
+
+
+
+```
+
