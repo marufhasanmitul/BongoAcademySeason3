@@ -1,4 +1,4 @@
-```php
+
 <?php
 
 $image = $_POST['image'];
@@ -20,6 +20,6 @@ if(file_put_contents($file,$decoded)){
 }
 
 ?>
-```
+
 
 
