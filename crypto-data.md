@@ -66,4 +66,24 @@ echo $encoded;
 ?>
 ```
 
+Decrypt  Data PHP
+
+```php
+<?php 
+
+//Decrypt Data PHP
+
+$encodedData="oMWCwNGj8F1WZgfjwWEKJ5g1K3hrVAcFHJjV7DGh//Q=";
+$decoded=base64_decode($encodedData);
+$decryped=openssl_decrypt($decoded,'AES-128-ECB','yKIkZeXTQ=9NWugO',OPENSSL_RAW_DATA);
+
+
+echo $decryped;
+
+?>
+```
+
+
+
+
 
